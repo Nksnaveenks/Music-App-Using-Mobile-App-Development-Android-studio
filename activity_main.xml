@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="imgr"
+    android:background="#531711"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="198dp"
+        android:layout_height="200dp"
+        android:contentDescription="im"
+        app:layout_constraintBottom_toTopOf="@+id/start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/music" />
+
+    <ImageView
+        android:id="@+id/start"
+        android:layout_width="162dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="208dp"
+        android:contentDescription="imge"
+        android:onClick="changePlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stop"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/start" />
+
+    <ImageView
+        android:id="@+id/stop"
+        android:layout_width="144dp"
+        android:layout_height="123dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="208dp"
+        android:onClick="changePlay"
+        android:contentDescription="image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/stop" />
+</androidx.constraintlayout.widget.ConstraintLayout>
